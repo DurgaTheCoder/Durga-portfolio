@@ -1,0 +1,56 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,Arial,sans-serif;color:#172033;background:#fff}
+.topbar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:14px 6%;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);box-shadow:0 2px 14px rgba(0,0,0,.08)}
+.logo{font-weight:700;letter-spacing:2px;color:#172033;text-decoration:none}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:#172033;text-decoration:none;font-size:13px;font-weight:500}
+nav a:hover{opacity:.55}
+.hero{min-height:620px;display:grid;grid-template-columns:48% 52%;background:#f8f8fb}
+.hero-photo{background:url('assets/hero-bg.jpg') center/cover no-repeat;min-height:620px}
+.hero-content{display:flex;flex-direction:column;justify-content:center;padding:9%}
+.eyebrow{font-family:'Cormorant Garamond',serif;font-size:76px;line-height:.85;letter-spacing:2px;margin-bottom:40px}
+.hero h1{font-size:25px;text-transform:uppercase;letter-spacing:3px;margin-bottom:7px}
+.role{font-size:14px;color:#5a6170;margin-bottom:28px}
+.button{width:max-content;text-decoration:none;color:#fff;background:#182033;padding:11px 20px;font-size:12px;letter-spacing:1px}
+.split{display:grid;grid-template-columns:46% 54%;min-height:500px}
+.photo-panel{background-size:cover;background-position:center}
+.profile{background-image:url('assets/profile.png');background-position:center top}
+.education-image{background-image:url('assets/education.jpg')}
+.text-panel{padding:7% 9%;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(135deg,#fff,#f3f7fb)}
+h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:66px;line-height:.8;letter-spacing:1px;margin-bottom:34px}
+.text-panel p{font-size:13px;line-height:1.75;color:#454c59;margin-bottom:10px}
+.text-panel h3{font-size:18px;margin-bottom:5px}
+.visual-section{min-height:520px;background-size:cover;background-position:center;position:relative}
+.skills{background-image:url('assets/skills-bg.jpg')}
+.projects{background-image:url('assets/projects-bg.jpg')}
+.overlay{min-height:520px;padding:7% 8%;background:rgba(255,255,255,.64)}
+.visual-section h2{text-align:right}
+.skill-list{max-width:360px;margin-left:10%;display:grid;gap:18px}
+.skill-list div{display:flex;flex-direction:column;font-size:14px}
+.skill-list strong{font-size:15px}
+.skill-list span{color:#596171}
+.projects .overlay{padding-left:5%;padding-right:5%}
+.projects h2{margin-bottom:48px}
+.projects article{max-width:590px;margin-bottom:27px}
+.projects article h3{font-size:16px;margin-bottom:5px}
+.projects article p{font-size:13px;line-height:1.55}
+.contact{min-height:410px;background:#050505;color:#fff;display:grid;grid-template-columns:40% 60%;padding:28px 4%;gap:25px}
+.contact-copy{display:flex;flex-direction:column;justify-content:center}
+.small{font-size:12px;letter-spacing:1px;margin-bottom:18px}
+.contact h2{font-size:58px;margin-bottom:24px}
+.contact-copy p{font-size:14px;line-height:1.7;margin-bottom:15px}
+.contact a{color:#fff;text-decoration:none}
+.contact-image{background:url('assets/contact-bg.jpg') center/cover no-repeat;min-height:350px}
+footer{background:#050505;color:#bbb;padding:18px 5%;display:flex;justify-content:space-between;font-size:11px;border-top:1px solid #222}
+@media(max-width:760px){
+ .topbar{align-items:flex-start;gap:10px}.topbar nav{gap:9px}.topbar nav a{font-size:10px}
+ .hero,.split,.contact{grid-template-columns:1fr}
+ .hero-photo{min-height:330px}.hero-content{min-height:300px;padding:12% 8%}
+ .eyebrow{font-size:58px;margin-bottom:25px}
+ .split{min-height:auto}.photo-panel{min-height:380px}.text-panel{min-height:430px;padding:12% 8%}
+ h2{font-size:54px}.visual-section,.overlay{min-height:560px}
+ .skill-list{margin-left:0}.projects h2{text-align:left}
+ .contact-image{min-height:260px}.contact{padding:25px}
+ footer{gap:10px;flex-direction:column}
+}
